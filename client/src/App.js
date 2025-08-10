@@ -23,7 +23,7 @@ function App() {
     if (!query) return;
     try {
       const res = await axios.get(
-        `https://www.omdbapi.com/?apikey=97828ed8&s=${query}`
+        `YOUR_API_KEY`
       );
       if (res.data.Search) {
         setSearchResults(res.data.Search);
